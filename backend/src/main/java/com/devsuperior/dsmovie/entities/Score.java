@@ -8,7 +8,7 @@ import javax.persistence.Table;
 @Table(name = "tb_score")
 public class Score {
 	
-	@EmbeddedId
+	@EmbeddedId // -> porque é uma chave composta
 	private ScorePK id = new ScorePK();
 	private Double value;
 	
